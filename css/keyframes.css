@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/*opa1（透明から着色状態に）
+---------------------------------------------------------------------------*/
+@keyframes opa1 {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+/*opa2（透明から着色状態に＆下からフェードイン）
+---------------------------------------------------------------------------*/
+@keyframes opa2 {
+	0% {opacity: 0;top: 20px;}
+	100% {opacity: 1;top: 0px;}
+}
+
+/*スライドショーのフレーム設定
+---------------------------------------------------------------------------*/
+@keyframes slide1 {
+	0% {opacity: 0;}
+	1% {opacity: 1;}
+	32% {opacity: 1;}
+	33% {opacity: 0;}
+	66% {opacity: 0;}
+	100% {opacity: 0;}
+}
+@keyframes slide2 {
+	0% {opacity: 0;}
+	33% {opacity: 0;}
+	34% {opacity: 1;}
+	65% {opacity: 1;}
+	66% {opacity: 0;}
+	100% {opacity: 0;}
+}
+@keyframes slide3 {
+	0% {opacity: 0;}
+	33% {opacity: 0;}
+	34% {opacity: 0;}
+	65% {opacity: 0;}
+	66% {opacity: 0;}
+	67% {opacity: 1;}
+	99% {opacity: 1;}
+	100% {opacity: 0;}
+}
