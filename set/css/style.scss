@@ -153,14 +153,14 @@ header {
 				line-height: 50px; //行間。headerのheightと数字を合わせる。
 			}
 
-			.ddmenu{
-				a{
+			.ddmenu {
+				a {
 					display: block;
 					text-decoration: none;
 					color: #fff; //文字色
 					padding: 0px 20px; //上下、左右へのメニュー内の余白
 					line-height: 50px; //行間。headerのheightと数字を合わせる。
-		
+
 					//マウスオン時の背景色
 					&:hover {
 						background: #595044 !important; //#695e4d
@@ -201,24 +201,24 @@ header {
 		}
 	}
 }
-#panel{
+#panel {
 	display: none;
 	margin-top: 60px;
 	margin-bottom: -50px;
 	#menubar-s {
 		overflow: hidden;
-		background: #fff;	/*背景色*/
-		border: 5px solid #e1e1e1;	/*枠線の幅、線種、色*/
+		background: #fff; /*背景色*/
+		border: 5px solid #e1e1e1; /*枠線の幅、線種、色*/
 		text-align: center;
 		margin: 0px 2% 15px;
-	
+
 		li {
-			border-bottom: solid 1px #d9d9d9;	/*枠線の線種、幅、色*/
+			border-bottom: solid 1px #d9d9d9; /*枠線の線種、幅、色*/
 			float: left;
 			width: 48%;
 			margin: 0 1% 0;
 		}
-	
+
 		a {
 			text-decoration: none;
 			display: block;
@@ -226,7 +226,6 @@ header {
 		}
 	}
 }
-
 
 div.image {
 	padding-top: 50px;
@@ -261,9 +260,9 @@ div.image {
 			padding-left: 40px; //左に空ける余白
 		}
 
-		h3{
+		h3 {
 			margin: 0px 30px;
-			font-weight: bold; 
+			font-weight: bold;
 		}
 
 		p {
@@ -277,31 +276,40 @@ div.image {
 			margin-top: -20px;
 		}
 
-		p + h2, h2 + div.document, div.document + p {
+		p + h2,
+		h2 + div.document,
+		div.document + p {
 			margin-top: -10px;
 		}
 
-		table#research{
+		table#research {
 			width: 100%;
 		}
 
-		ul{
-			margin: -10px 50px 0px 50px; //上右下左
-			list-style-type:disc;
-			
-			li{
+		ul {
+			margin: -20px 50px 0px 50px; //上右下左
+			list-style-type: disc;
+
+			li {
 				//list-style-type:none;
 
-				p{
-					margin: 0px 0px -30px -20px; //上右下左
-					&:before{
-						content:'◇';
+				p {
+					margin: 0px 0px -15px -20px; //上右下左
+					//padding: 0px 0px 0px 0px; //上右下左
+					&:before {
+						content: "◇";
 					}
 				}
 			}
+
+			& + h2{
+				margin-top: 10px;
+				margin-bottom: 30px;
+			}
 		}
 
-		a.anchor {//リンク位置調整用
+		a.anchor {
+			//リンク位置調整用
 			display: block;
 			padding-top: 50px;
 			margin-top: -50px;
@@ -413,53 +421,51 @@ footer {
 
 //研究資料の掲載用テーブルの枠
 p + .document {
-	margin: -40px 30px 30px 30px;//上右下左;
+	margin: -40px 30px 30px 30px; //上右下左;
 }
 
-.document + h2{
+.document + h2 {
 	margin: 0px 30px;
 }
 
-.document{
-	margin: 10px 30px 30px 30px;//上右下左
-	table{
+.document {
+	margin: 10px 30px 30px 30px; //上右下左
+	table {
 		border-collapse: collapse;
 		border: solid 2px black;
 		width: 100%;
 		margin: 30px 0px;
 
-		thead{
+		thead {
 			border: solid 2px black;
 		}
-		tbody{
-			tr{
+		tbody {
+			tr {
 				//border: dashed 1px black;
-				th{
-					&.name{
+				th {
+					&.name {
 						width: 20%;
-						border-right:dashed 1px black;
+						border-right: dashed 1px black;
 						background-color: #f0ece7;
 					}
-					&.department{
+					&.department {
 						width: 20%;
-						border-right:dashed 1px black;
+						border-right: dashed 1px black;
 						border-bottom: 1px dashed black;
 						background-color: #f0ece7;
 					}
-					&.pdfname{
+					&.pdfname {
 						width: 80%;
 						//border: dashed 1px black;
 					}
-					&.pdf{
+					&.pdf {
 						width: 80%;
 						border-bottom: dashed 1px black;
 					}
-					
 				}
 			}
 		}
 	}
-
 }
 
 @media screen and (max-width: 1100px) {
@@ -485,7 +491,8 @@ p + .document {
 				margin: 10px 2%;
 			}
 
-			h2 + p, h2 + h3{
+			h2 + p,
+			h2 + h3 {
 				margin-top: -5px;
 			}
 
@@ -495,6 +502,15 @@ p + .document {
 
 			h2 + dl {
 				margin-top: 2%;
+			}
+
+			h2 + ul{
+				margin-top: 10px;
+			}
+
+			ul + h2{
+				margin-top: 10px;
+				margin-bottom: 0px;
 			}
 		}
 
@@ -510,16 +526,16 @@ p + .document {
 		}
 	}
 
-	header{
+	header {
 		//小さい画面の時のメニュー表示用のアイコン
-		#right{
+		#right {
 			text-align: right;
 			margin-right: 10px;
 			position: absolute;
 			top: -23px;
 			right: -3px;
 		}
-		#panel-btn{
+		#panel-btn {
 			display: inline-block;
 			position: relative;
 			width: 45px;
@@ -528,10 +544,10 @@ p + .document {
 			border-radius: 50%;
 			background: #fff;
 		}
-		#panel-btn:hover{
+		#panel-btn:hover {
 			background: #fafafa;
 		}
-		#panel-btn-icon{
+		#panel-btn-icon {
 			display: block;
 			position: absolute;
 			top: 50%;
@@ -540,9 +556,10 @@ p + .document {
 			height: 2px;
 			margin: -1px 0 0 -10.5px;
 			background: #695e4d;
-			transition: .2s;
+			transition: 0.2s;
 		}
-		#panel-btn-icon:before, #panel-btn-icon:after{
+		#panel-btn-icon:before,
+		#panel-btn-icon:after {
 			display: block;
 			content: "";
 			position: absolute;
@@ -551,25 +568,26 @@ p + .document {
 			width: 21px;
 			height: 2px;
 			background: #695e4d;
-			transition: .3s;
+			transition: 0.3s;
 		}
-		#panel-btn-icon:before{
+		#panel-btn-icon:before {
 			margin-top: -9px;
 		}
-		#panel-btn-icon:after{
+		#panel-btn-icon:after {
 			margin-top: 6px;
 		}
-		#panel-btn .close{
+		#panel-btn .close {
 			background: transparent;
 		}
-		#panel-btn .close:before, #panel-btn .close:after{
+		#panel-btn .close:before,
+		#panel-btn .close:after {
 			margin-top: 0;
 		}
-		#panel-btn .close:before{
+		#panel-btn .close:before {
 			transform: rotate(-45deg);
 			-webkit-transform: rotate(-45deg);
 		}
-		#panel-btn .close:after{
+		#panel-btn .close:after {
 			transform: rotate(-135deg);
 			-webkit-transform: rotate(-135deg);
 		}
