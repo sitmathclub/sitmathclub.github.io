@@ -246,6 +246,7 @@ div.image {
 	#main {
 		float: right; //右側に回り込み
 		width: 75%;
+		margin: 0px 0px 20px;
 
 		h2 {
 			margin: 30px 20px;
@@ -282,6 +283,28 @@ div.image {
 
 		table#research{
 			width: 100%;
+		}
+
+		ul{
+			margin: -10px 50px 0px 50px; //上右下左
+			list-style-type:disc;
+			
+			li{
+				//list-style-type:none;
+
+				p{
+					margin: 0px 0px -30px -20px; //上右下左
+					&:before{
+						content:'◇';
+					}
+				}
+			}
+		}
+
+		a.anchor {//リンク位置調整用
+			display: block;
+			padding-top: 50px;
+			margin-top: -50px;
 		}
 	}
 
@@ -409,19 +432,29 @@ p + .document {
 			border: solid 2px black;
 		}
 		tbody{
-			th{
+			tr{
 				//border: dashed 1px black;
-				&.name{
-					width: 20%;
-					background-color: #f0ece7;
-				}
-				&.pdf{
-					width: 80%;
-					border: dashed 1px black;
-				}
-				&.department{
-					border-bottom: 1px dashed black;
-					background-color: #f0ece7;
+				th{
+					&.name{
+						width: 20%;
+						border-right:dashed 1px black;
+						background-color: #f0ece7;
+					}
+					&.department{
+						width: 20%;
+						border-right:dashed 1px black;
+						border-bottom: 1px dashed black;
+						background-color: #f0ece7;
+					}
+					&.pdfname{
+						width: 80%;
+						//border: dashed 1px black;
+					}
+					&.pdf{
+						width: 80%;
+						border-bottom: dashed 1px black;
+					}
+					
 				}
 			}
 		}
