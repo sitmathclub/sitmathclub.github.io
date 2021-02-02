@@ -1,0 +1,27 @@
+\documentclass{jarticle}
+%%%%%%%%%%%%%%%%%%%%  paper area %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textheight 235mm
+\textwidth  158mm
+\oddsidemargin  0mm
+\evensidemargin 0mm
+\topmargin 6mm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath,amssymb}
+\usepackage{eclbkbox}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{\Huge{タイトル}}
+\date{\today}
+\author{\huge{芝浦工業大学　数理科学研究会}\\[1.0cm]～サブタイトル～}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{titlepage}
+\maketitle
+\thispagestyle{empty}
+\begin{center}
+※何か不明な点や計算ミス等がありましたら加筆修正しますので指摘をお願いします
+\\[14.0cm]
+\flushright{\huge{制作:\ \ 名前}}
+\end{center}
+\end{titlepage}
+%ここから書き始めてください%
+\end{document}
