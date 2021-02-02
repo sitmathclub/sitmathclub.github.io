@@ -444,22 +444,22 @@ p + .document {
 				//border: dashed 1px black;
 				th {
 					&.name {
-						width: 20%;
+						width: 30%;
 						border-right: dashed 1px black;
 						background-color: #f0ece7;
 					}
 					&.department {
-						width: 20%;
+						width: 30%;
 						border-right: dashed 1px black;
 						border-bottom: 1px dashed black;
 						background-color: #f0ece7;
 					}
 					&.pdfname {
-						width: 80%;
+						width: 70%;
 						//border: dashed 1px black;
 					}
 					&.pdf {
-						width: 80%;
+						width: 70%;
 						border-bottom: dashed 1px black;
 					}
 				}
