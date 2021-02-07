@@ -505,6 +505,8 @@ footer {
 
 @media screen and (max-width: 1100px) {
 	header {
+		position: static;
+
 		#menubar,
 		#logo {
 			display: none;
@@ -512,6 +514,15 @@ footer {
 		#logo2 {
 			display: block;
 		}
+	}
+
+	#panel{
+		margin-top: 10px;
+		margin-bottom: -5px;
+	}
+
+	div.image{
+		padding-top: 0px;
 	}
 
 	#contents {
@@ -522,8 +533,17 @@ footer {
 		}
 
 		#main {
+			p+.document,
+			.document{
+				margin: -40px 4% 3% 4%; //上右下左
+			}
+
 			h2 {
 				margin: 10px 2%;
+			}
+
+			p{
+				margin: 0px 1%;
 			}
 
 			h2 + p,
